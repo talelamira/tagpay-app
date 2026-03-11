@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# TagPay - Sécurité : NE JAMAIS COMMITTER CES FICHIERS
+android/app/*.keystore
+android/app/*.jks
+android/gradle.properties
+google-services.json

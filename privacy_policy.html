@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TagPay – Politique de confidentialité</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 24px; color: #1e293b; line-height: 1.7; }
+    h1 { color: #2563eb; font-size: 2rem; margin-bottom: 4px; }
+    h2 { color: #0f172a; font-size: 1.1rem; margin-top: 2rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    .badge { display: inline-block; background: #dbeafe; color: #1d4ed8; font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; margin-bottom: 20px; }
+    .updated { color: #64748b; font-size: 0.85rem; }
+    ul { padding-left: 1.4em; }
+    li { margin-bottom: 6px; }
+    .highlight { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px 16px; border-radius: 6px; margin: 16px 0; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; color: #94a3b8; font-size: 0.85rem; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <h1>TagPay</h1>
+  <span class="badge">Politique de confidentialité</span>
+  <p class="updated">Dernière mise à jour : 11 mars 2026</p>
+
+  <div class="highlight">
+    <strong>En résumé :</strong> TagPay ne collecte, ne vend et ne partage <em>aucune donnée personnelle</em> à des tiers. Toutes vos transactions restent sur votre appareil.
+  </div>
+
+  <h2>1. Qui sommes-nous ?</h2>
+  <p>TagPay est une application mobile Android développée pour aider les utilisateurs à classifier automatiquement leurs transactions Google Pay en catégories personnelles (Perso / Pro) et à en conserver un historique local.</p>
+
+  <h2>2. Données collectées et stockées</h2>
+  <p>TagPay <strong>ne collecte aucune donnée personnelle</strong> au sens du RGPD. Plus précisément :</p>
+  <ul>
+    <li>Les informations de transaction (montant, marchand, date) sont <strong>stockées uniquement sur votre appareil</strong> via le stockage local Android (AsyncStorage).Elles ne sont jamais transmises à nos serveurs.</li>
+    <li>Les photos de reçus prises via l'application sont <strong>stockées localement</strong> sur votre appareil. Elles ne sont ni téléversées ni partagées.</li>
+    <li>TagPay n'accède à votre caméra ou galerie <strong>qu'à votre demande explicite</strong> (bouton "Ajouter un reçu").</li>
+    <li>TagPay intercepte les notifications Google Pay afin de vous proposer de classifier la transaction. Le <strong>contenu complet de ces notifications n'est jamais transmis</strong> en dehors de l'appareil.</li>
+  </ul>
+
+  <h2>3. Analytique Firebase (données anonymes)</h2>
+  <p>Nous utilisons Google Firebase Analytics pour comprendre l'utilisation globale de l'application. Les événements collectés sont <strong>entièrement anonymes</strong> :</p>
+  <ul>
+    <li><code>notification_received</code> : une notification Google Pay a été interceptée.</li>
+    <li><code>popup_displayed</code> : la fenêtre de classification a été affichée.</li>
+    <li><code>tag_confirmed</code> : l'utilisateur a classifié une transaction (type : Perso ou Pro). <em>Aucun montant, aucun nom de marchand, aucune information financière n'est envoyé.</em></li>
+  </ul>
+  <p>Ces données sont utilisées uniquement pour améliorer l'application. Vous pouvez consulter la politique de confidentialité de Google Firebase <a href="https://firebase.google.com/support/privacy" target="_blank">ici</a>.</p>
+
+  <h2>4. Permissions Android utilisées</h2>
+  <ul>
+    <li><strong>BIND_NOTIFICATION_LISTENER_SERVICE</strong> : pour détecter les notifications Google Pay. Aucun contenu n'est transmis à l'extérieur.</li>
+    <li><strong>CAMERA</strong> : pour photographier des reçus physiques, uniquement sur action explicite de l'utilisateur.</li>
+    <li><strong>READ_MEDIA_IMAGES</strong> : pour sélectionner une photo de reçu depuis la galerie, uniquement sur action explicite.</li>
+    <li><strong>SYSTEM_ALERT_WINDOW</strong> : pour afficher la fenêtre de classification par-dessus d'autres applications au moment d'un paiement.</li>
+    <li><strong>INTERNET</strong> : pour les rapports d'erreur Firebase Crashlytics (rapports de crash anonymisés).</li>
+  </ul>
+
+  <h2>5. Partage des données avec des tiers</h2>
+  <p>TagPay <strong>ne vend, ne partage, ni ne loue</strong> aucune donnée personnelle à des tiers.</p>
+
+  <h2>6. Conservation des données</h2>
+  <p>Toutes les données (transactions, tags, photos) sont conservées localement sur votre appareil. Vous pouvez les supprimer à tout moment en désinstallant l'application.</p>
+
+  <h2>7. Vos droits (RGPD)</h2>
+  <p>Puisque TagPay ne conserve aucune donnée personnelle identifiable sur des serveurs externes, il n'y a pas de données à soumettre à une demande d'accès, de rectification ou de suppression. Si vous souhaitez tout de même nous contacter pour toute question, référez-vous à la section ci-dessous.</p>
+
+  <h2>8. Contact</h2>
+  <p>Pour toute question relative à cette politique de confidentialité, vous pouvez nous contacter à l'adresse suivante : <strong>contact@tagpay.app</strong> (ou via la fiche de l'application sur le Google Play Store).</p>
+
+  <h2>9. Modifications</h2>
+  <p>Cette politique peut être mise à jour à tout moment. La date de "dernière mise à jour" en haut de cette page reflète toujours la version en vigueur.</p>
+
+  <footer>
+    TagPay · Politique de confidentialité · v1.1.0 · &copy; 2026
+  </footer>
+</body>
+</html>
